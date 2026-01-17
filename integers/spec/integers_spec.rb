@@ -9,6 +9,10 @@ RSpec.describe "Integers" do
     expect(sum(1, 2)).to eq(3)
   end
 
+  it "sum of 1 and 1 should be 2" do
+    expect(sum(1, 1)).to eq(2)
+  end
+
   it "product of 1 and 2 should be 2" do
     expect(product(1, 2)).to eq(2)
   end
