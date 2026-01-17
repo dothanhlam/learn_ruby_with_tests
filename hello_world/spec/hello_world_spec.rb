@@ -1,5 +1,5 @@
 
-require 'hello_world'
+require_relative '../lib/hello_world'
 
 RSpec.describe "Hello World" do
   it "says hello" do

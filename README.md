@@ -36,7 +36,12 @@ We use RSpec for testing. You can run the tests using `bundle exec rspec` or the
 
 - **Run a specific test file**:
   ```bash
-  bundle exec rspec spec/hello_world_spec.rb
+  bundle exec rspec hello_world/spec/hello_world_spec.rb
+  ```
+
+- **Run a specific test example (by line number)**:
+  ```bash
+  bundle exec rspec hello_world/spec/hello_world_spec.rb:4
   ```
 
 ## Philosophy
