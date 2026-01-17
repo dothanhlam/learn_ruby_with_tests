@@ -44,6 +44,27 @@ We use RSpec for testing. You can run the tests using `bundle exec rspec` or the
   bundle exec rspec hello_world/spec/hello_world_spec.rb:4
   ```
 
+## Creating a New Lesson
+
+You can use the provided Rake task to scaffold a new lesson. This will create the necessary directory structure and files.
+
+**Usage:**
+
+```bash
+rake "new_lesson[lesson_name]"
+```
+
+*Note: The quotes are often necessary in zsh/bash to prevent the square brackets from being interpreted as glob patterns.*
+
+**Example:**
+```bash
+rake "new_lesson[integers]"
+```
+
+This will create:
+- `integers/lib/integers.rb`
+- `integers/spec/integers_spec.rb`
+
 ## Philosophy
 
 - **TDD (Test Driven Development)**: We write the test first, see it fail, write the minimum code to make it pass, and then refactor.
