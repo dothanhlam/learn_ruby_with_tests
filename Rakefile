@@ -31,6 +31,7 @@ task :new_lesson, [:name] do |t, args|
   unless File.exist?(lib_file)
     File.write(lib_file, <<~RUBY)
       def #{dir_name}
+        #{true}
       end
     RUBY
     puts "Created #{lib_file}"
