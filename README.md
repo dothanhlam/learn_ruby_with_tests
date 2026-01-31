@@ -1,6 +1,8 @@
 # Learn Ruby With Tests
 
-This project is an adaptation of "Learn Go with Tests" for Ruby. It is designed to help you explore the Ruby language by writing tests first.
+This project is an adaptation of "Learn Go with Tests" for Ruby. It is designed to help you explore the Ruby language by writing tests first. This is a great way to learn a new language, especially if you are already familiar with test-driven development.
+
+Note: All the code in this project is followed by the website https://www.theodinproject.com/
 
 ## Prerequisites
 

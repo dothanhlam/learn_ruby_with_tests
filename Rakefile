@@ -41,8 +41,8 @@ task :new_lesson, [:name] do |_t, args|
     File.write(spec_file, <<~RUBY)
       require_relative '../lib/#{dir_name}'
 
-      RSpec.describe "#{name.capitalize}" do
-        it "does something" do
+      RSpec.describe '#{name.capitalize}"' do
+        it 'does something' do
           expect(#{dir_name}).to eq(true)
         end
       end

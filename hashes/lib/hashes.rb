@@ -1,0 +1,3 @@
+def hashes
+  true
+end
