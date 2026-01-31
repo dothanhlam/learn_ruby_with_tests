@@ -1,11 +1,9 @@
 def strings
-    "abcdefghijklmnopqrstuvwxyz"
+  'abcdefghijklmnopqrstuvwxyz'
 end
 
-def concate_strings a, b
-    if a.is_a?(String) && b.is_a?(String)
-        a + b
-    else
-        raise ArgumentError, "Both arguments must be strings"
-    end
+def concate_strings(a, b)
+  raise ArgumentError, 'Both arguments must be strings' unless a.is_a?(String) && b.is_a?(String)
+
+  a + b
 end

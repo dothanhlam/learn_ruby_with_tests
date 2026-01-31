@@ -1,11 +1,11 @@
 def integers
-    1
+  1
 end
 
 def sum(a, b)
-    a + b
-end 
+  a + b
+end
 
 def product(a, b)
-    a * b
+  a * b
 end
