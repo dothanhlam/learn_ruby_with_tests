@@ -6,11 +6,10 @@ RSpec.describe 'Strings' do
   end
 
   it 'concatenates two strings' do
-
     expect(concatenate_strings('abc', 'def')).to eq('abcdef')
-  end 
+  end
 
   it 'raises an error if arguments are not strings' do
-    expect { concatenate_strings(1, 2) }.to raise_error(ArgumentError)  
+    expect { concatenate_strings(1, 2) }.to raise_error(ArgumentError)
   end
 end

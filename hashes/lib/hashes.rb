@@ -37,15 +37,13 @@ def number_to_sentence(number)
     remainder = number % 10
     return "#{NUMBERS_TO_WORDS[tens]} #{NUMBERS_TO_WORDS[remainder]}"
   end
-  
-  if number < 1000
-    hundreds = number / 100
-    remainder = number % 100
-    
-    result = "#{NUMBERS_TO_WORDS[hundreds]} hundred"
-    if remainder > 0
-      result += " and #{number_to_sentence(remainder)}"
-    end
-    return result
-  end
+
+  return unless number < 1000
+
+  hundreds = number / 100
+  remainder = number % 100
+
+  result = "#{NUMBERS_TO_WORDS[hundreds]} hundred"
+  result += " and #{number_to_sentence(remainder)}" if remainder > 0
+  result
 end
