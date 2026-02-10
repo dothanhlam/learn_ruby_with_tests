@@ -16,6 +16,7 @@ class TextCompressor
         add_unique_word(word)
       end
     end
+    @index
   end
 
   def unique_index_of(word)
